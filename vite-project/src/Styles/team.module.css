@@ -1,0 +1,69 @@
+.table-wrapper {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.table-wrapper thead {
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  background-color: var(--primary-background);
+}
+
+.table-wrapper thead th {
+  padding: 0.5rem;
+  color: var(--primary-color);
+  font-weight: normal;
+}
+
+.table-wrapper tbody td {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--muted-background);
+  color: var(--semi-dark-color);
+}
+
+.table-wrapper .edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.table-wrapper .edit-btn img {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.table-wrapper .edit-btn img:hover {
+  background-color: var(--secondary-color);
+}
+
+.delete-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.delete-wrapper div {
+  color: var(--dark-color);
+}
+
+.delete-wrapper span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.add-btn {
+  margin-left: auto;
+}

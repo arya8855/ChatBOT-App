@@ -1,0 +1,25 @@
+.landing_header-wrapper {
+  width: 100%;
+}
+
+.landing_header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.landing_header-buttons {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.landing_header-signup-btn {
+  display: inline-flex;
+}
+
+@media (max-width: 768px) {
+  .landing_header-signup-btn {
+    display: none;
+  }
+}

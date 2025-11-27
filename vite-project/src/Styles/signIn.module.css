@@ -1,0 +1,18 @@
+.submitBtn {
+  width: 100%;
+}
+
+.Text {
+  color: #6c757d;
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.Link {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.Link:hover {
+  text-decoration: underline;
+}

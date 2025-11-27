@@ -1,0 +1,24 @@
+.setting-card {
+  border-radius: 20px;
+  background-color: var(--ternary-color);
+  width: auto;
+  padding: 2rem;
+}
+
+.setting-form-wrapper {
+  max-width: 50%;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.setting-btn {
+  width: max-content;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .setting-form-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+}

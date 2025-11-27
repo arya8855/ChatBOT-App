@@ -1,0 +1,36 @@
+.suggesstion-info-wrapper {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.suggesstion-info-wrapper .suggesstion-info {
+  cursor: pointer;
+}
+
+.suggesstion-info-wrapper .suggesstion-text {
+  display: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: x-small;
+  color: var(--muted-background);
+  background-color: var(--white-color);
+  z-index: 10;
+}
+
+.suggesstion-info-wrapper:hover .suggesstion-text {
+  display: block;
+}
+
+.input-suggestion-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-suggestion-wrapper input {
+  flex-grow: 1;
+}

@@ -1,0 +1,40 @@
+.time-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.time-column {
+  max-height: 90px;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.time-column::-webkit-scrollbar {
+  display: none;
+}
+
+.time-item {
+  scroll-snap-align: center;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.active-time {
+  background: #eaf1f3;
+  font-weight: bold;
+}
+
+.colon {
+  padding: 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}

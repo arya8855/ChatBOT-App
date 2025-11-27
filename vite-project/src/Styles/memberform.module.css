@@ -1,0 +1,23 @@
+.description {
+  color: #6c757d;
+  font-size: 14px; 
+  margin: 8px 0; 
+  line-height: 1.4;
+}
+
+.submitBtn {
+  width: 100%; 
+  padding: 10px 14px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
