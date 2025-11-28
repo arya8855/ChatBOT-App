@@ -24,8 +24,8 @@ const postLogin = async (req, res, next) => {
         // Save in HttpOnly cookie
         res.cookie("access_token", token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "Lax",
+            secure: true,
+            sameSite: "None",
             path: "/"
         });
 
