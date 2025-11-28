@@ -9,6 +9,7 @@ const AuthWrapper = ({
   sideLink,
   sideText,
   hasbottomLine = true,
+  className = ""
 }) => {
   return (
     <div className="auth-container">
@@ -33,7 +34,7 @@ const AuthWrapper = ({
         </div>
 
         {hasbottomLine && (
-          <div className="text-secondary text-center text-xs mb-2">
+          <div className="text-secondary text-center text-xs mb-3">
             This site is protected by reCAPTCHA and the{" "}
             <Link className="text-secondary" to={"../"}>
               Google Privacy Policy

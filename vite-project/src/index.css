@@ -34,7 +34,7 @@
   --extra-large-font-size: clamp(2rem, 5vw, 4rem); /* 32px - 64px */
 
   /* Old Classes */
-  color-scheme: light dark;
+  color-scheme: light;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
