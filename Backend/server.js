@@ -6,17 +6,26 @@ const connectDB = require('./config/db');
 
 const app = express();
 
+app.set("trust proxy", 1);
+
 connectDB();
 
 app.use(express.json());
 app.use(cookieParser());
 
 //CORS
+const allowedOrigins = [
+  "http://localhost:5173",
+  
+];
+
 app.use(
-    cors({
-        origin: ["http://localhost:5173"],
-        credentials: true,
-    })
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
 );
 
 const { errorMiddleware } = require("./middleware/errorMiddleware");

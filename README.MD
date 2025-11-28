@@ -32,7 +32,7 @@ MongoDB (Handled in the backend)
 Follow these steps to set up the frontend locally:
 
 # Clone the repository
-git clone https://github.com/arya8855/ChatBOT-App-FE.git
+git clone https://github.com/arya8855/ChatBOT-App
 cd Hubly CRM-FE
 
 # Install dependencies
