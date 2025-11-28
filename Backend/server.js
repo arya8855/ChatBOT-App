@@ -16,7 +16,7 @@ app.use(cookieParser());
 //CORS
 const allowedOrigins = [
   "http://localhost:5173",
-  
+   "https://chat-bot-app-red.vercel.app"
 ];
 
 app.use(
