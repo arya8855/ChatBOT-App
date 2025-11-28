@@ -25,14 +25,21 @@ View chatbot usage metrics.
 Monitor chatbot response time.
 
 🧱 Tech Stack
+
 Frontend
+
 React
+
 Redux Toolkit (RTK Query)
+
 Vanilla CSS
 
 Backend
+
 Node.js/Express 
+
 Database
+
 MongoDB (Handled in the backend)
 
 📦 Installation
