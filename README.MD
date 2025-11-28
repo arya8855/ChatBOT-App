@@ -2,9 +2,9 @@ Hubly CRM - Chatbot & Admin Management Portal
 🚀 Overview
 Hubly is a team-oriented communication platform that enables businesses to integrate a chatbot interface for end-users and a powerful admin portal for internal management. End-users can chat through a widget embedded in a website, while admins can monitor conversations, manage chatbot settings, configure teams, and view chat-based analytics.
 
-🚀 Live Links Backend : 
+🚀 Live Links Backend : https://hubly-crm-rgur.onrender.com
 
- Hubly-CRM(Frontend) : 
+ Hubly-CRM(Frontend) : https://chat-bot-app-red.vercel.app
 
  ✨Admin: Email- arya@test.com || Password- Arya@666
 
@@ -33,6 +33,7 @@ Follow these steps to set up the frontend locally:
 
 # Clone the repository
 git clone https://github.com/arya8855/ChatBOT-App
+
 cd Hubly CRM-FE
 
 # Install dependencies
