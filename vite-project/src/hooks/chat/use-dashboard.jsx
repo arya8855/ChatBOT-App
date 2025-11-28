@@ -30,7 +30,7 @@ const useDashboard = () => {
     {
       limit: 5,
       page: page,
-      status: activeMode,
+      status: activeMode === "All" ? undefined : activeMode.toLowerCase(),
     },
     {
       refetchOnMountOrArgChange: true,

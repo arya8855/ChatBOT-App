@@ -137,7 +137,7 @@ const ChatBot = () => {
                   <div ref={chatEndRef} />
                 </div>
 
-                {converstaionData.status === "Resolved" && (
+                {converstaionData.status === "resolved" && (
                   <div className={styles["chat_bot-ended"]}>
                     <span>This ticket has resolved!</span>
                     <Button type="button" size="sm" onClick={handleReset}>
@@ -180,7 +180,7 @@ const ChatBot = () => {
               onChange={handleChatBotInput}
               onKeyDown={checkForChatSubmisstion}
               disabled={
-                isLoadingUserForm || converstaionData?.status === "Resolved"
+                isLoadingUserForm || converstaionData?.status === "resolved"
               }
             />
             <img
@@ -191,7 +191,7 @@ const ChatBot = () => {
               onClick={() => {
                 if (
                   isLoadingUserForm ||
-                  converstaionData?.status === "Resolved"
+                  converstaionData?.status === "resolved"
                 )
                   return
                 handleChatSubmission(inputText)

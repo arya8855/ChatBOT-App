@@ -14,7 +14,6 @@ const baseQuery = fetchBaseQuery({
 
     return headers;
   },
-  credentials: "include",
 });
 
 export const baseQueryWithInterceptor = async (args, api, extraOptions) => {

@@ -20,7 +20,7 @@ const SETTINGS_PAGE = lazy(() => import("./pages/dashboard/settings"));
 function App() {
   return (
     <BrowserRouter>
-      {/* <Suspense fallback={<div>Loading...</div>}> */}
+      <Suspense fallback={<div>Loading...</div>}>
 
         <Routes>
           {/* Public Routes */}
@@ -58,7 +58,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
 
-      {/* </Suspense> */}
+      </Suspense>
     </BrowserRouter>
   );
 }

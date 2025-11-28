@@ -10,16 +10,15 @@ import {
 } from "../../redux/slice/lead-slice"
 
 const useChatBot = () => {
-  const [leadID, setLeadID] = useState(
-    () => localStorage.getItem("leadID") ?? null
-  )
+  const [leadID, setLeadID] = useState(null);
 
   const { data, isLoading } = useGetChatBotDetailsQuery()
 
   const { data: convData, refetch: refetchConvData } =
-    useGetUserConversationQuery(leadID ? leadID : skipToken, {
-      refetchOnMountOrArgChange: true,
-    })
+  useGetUserConversationQuery(leadID, {
+    skip: !leadID,
+    refetchOnMountOrArgChange: true,
+  });
 
   const [postUserForm, { isLoading: isLoadingUserForm }] =
     usePostUserFormMutation()
@@ -56,10 +55,10 @@ const useChatBot = () => {
 
   // Toggle Chatbot
   const handleToggleChatBot = () => {
-    setToggleChatBot((prev) => !prev)
-    if (!toggleChatBot) refetchConvData()
-    if (welcomeToggle) setWelcomeToggle(false)
-  }
+    setToggleChatBot((prev) => !prev);
+    if (!toggleChatBot && leadID) refetchConvData();  
+    if (welcomeToggle) setWelcomeToggle(false);
+  };
 
   // Text input
   const handleChatBotInput = (e) => {
@@ -90,14 +89,14 @@ const useChatBot = () => {
       } else {
         const response = await sendFirstMessage({ message: message }).unwrap()
         setLeadID(response.leadID)
-        localStorage.setItem("leadID", response.leadID)
+        // localStorage.setItem("leadID", response.leadID)
       }
     } catch (error) {
       console.log("Error updating profile:", error)
     } finally {
-      setInputText("")
-      refetchConvData()
-    }
+        setInputText("");
+        if (leadID) refetchConvData(); 
+      }
   }
 
   // Submit user detail form
@@ -150,8 +149,9 @@ const useChatBot = () => {
       setInputText("")
       setWelcomeToggle(false)
       setConverstaionData(null)
-      setLeadID("")
-      localStorage.removeItem("leadID")
+      // setLeadID("")
+      // localStorage.removeItem("leadID")
+      setLeadID(null);
     })
   }
 

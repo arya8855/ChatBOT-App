@@ -67,13 +67,10 @@ const leadAPI = createApi({
       invalidatesTags: ["UserConversation"],
     }),
 
-    // --------------------------------------------------------
-    // ADMIN / TEAM — DASHBOARD
-    // --------------------------------------------------------
 
     // CHAT LIST
     getChatList: builder.query({
-      query: () => ROUTES.TicketRoute, // /chat/ticket
+      query: () => ROUTES.TicketRoute, 
       transformResponse: (response) => response,
       providesTags: ["ChatList"],
     }),
@@ -93,7 +90,7 @@ const leadAPI = createApi({
     // UPDATE TICKET STATUS
     putChatStatus: builder.mutation({
       query: (data) => ({
-        url: ROUTES.TicketStatusRoute, // /chat/ticket/status
+        url: ROUTES.TicketStatusRoute, 
         method: "PUT",
         body: data,
       }),

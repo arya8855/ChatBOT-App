@@ -93,8 +93,10 @@ const Sidebar = () => {
   return (
     <>
       <div>
-        {/* Header */}
-        <LogoWrapper hasTitle={false} />
+        <div className={styles.Header}>
+          <LogoWrapper hasTitle={false} />
+        </div>
+        
 
         {/* Navigation */}
         <nav className={styles.navigationWrapper}>

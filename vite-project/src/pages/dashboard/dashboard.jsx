@@ -87,9 +87,9 @@ const Dashboard = () => {
                   />
 
                   <div className="ticket-text">
-                    <div>{ticket.senderDetails.name}</div>
-                    <div>{ticket.senderDetails.phone}</div>
-                    <div>{ticket.senderDetails.email}</div>
+                    <div>{ticket.userName}</div>
+                    <div>{ticket.userPhone}</div>
+                    <div>{ticket.userEmail}</div>
                   </div>
                 </div>
 

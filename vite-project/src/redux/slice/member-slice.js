@@ -35,7 +35,7 @@ const memberAPI = createApi({
       async onQueryStarted(data, { dispatch, queryFulfilled }) {
         const tempId = crypto.randomUUID();
 
-        // Optimistic update
+        
         const addResult = dispatch(
           memberAPI.util.updateQueryData(
             "getMemberList",
@@ -54,7 +54,6 @@ const memberAPI = createApi({
 
         try {
           await queryFulfilled;
-          // Force refetch
           dispatch(
             memberAPI.endpoints.getMemberList.initiate(undefined, {
               forceRefetch: true,

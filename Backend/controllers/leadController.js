@@ -169,7 +169,7 @@ function getWeekNumber(date) {
 const getLeadsAnalytics = async (req, res, next) => {
     try {
         const totalLeads = await Lead.countDocuments();
-        const resolvedLeads = await Lead.countDocuments({ status: "Resolved" });
+        const resolvedLeads = await Lead.countDocuments({ status: "resolved" });
 
         const resolvedPercentage =
             totalLeads === 0 ? 0 : Math.round((resolvedLeads / totalLeads) * 100);

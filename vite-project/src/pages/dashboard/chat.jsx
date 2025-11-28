@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux"//
+import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import CALL_ICON from "../../assets/call.svg"
 import HOME_ICON from "../../assets/home.svg"
@@ -136,14 +136,14 @@ const Chat = ({ isDirect = false }) => {
                     </div>
                   )}
 
-                  {activeChat.status === "Resolved" && (
+                  {activeChat.status === "resolved" && (
                     <div className="bottom-text">
                       This chat has been resolved
                     </div>
                   )}
                 </div>
 
-                {activeChat.status !== "Resolved" &&
+                {activeChat.status !== "resolved" &&
                 activeChat.isCurrentAssignee ? (
                   <div className="chat_window-footer">
                     <input
@@ -171,7 +171,7 @@ const Chat = ({ isDirect = false }) => {
                           isUpdatingAssignee ||
                           isLoading ||
                           isFetchingChats ||
-                          activeChat?.status === "Resolved"
+                          activeChat?.status === "resolved"
                         )
                           return;
                         handleChatSubmission(inputValue);

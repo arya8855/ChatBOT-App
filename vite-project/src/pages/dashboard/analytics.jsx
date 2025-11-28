@@ -35,7 +35,7 @@ const Analytics = () => {
 
       <div className="metric-card-wrapper">
         <MissedChatsChart leadData={data?.leadGraph ?? []} />
-        <AverageReplyTime total={data?.averateResponseTime ?? 0} />
+        <AverageReplyTime total={data?.averageResponseTime  ?? 0} />
         <ResolvedTickets total={data?.totalResolvedLeads ?? 0} />
         <TotalChats total={data?.totalLeads ?? 0} />
       </div>
@@ -94,11 +94,13 @@ const MissedChatsChart = ({ leadData }) => {
 
 // ResolvedTickets Component
 const ResolvedTickets = ({ total }) => {
+  const resolvedPercent = total ?? 0;
+  const unresolvedPercent = 100 - resolvedPercent;
   const data = {
-    labels: ["Resolved", "Pending"],
+    labels: ["resolved", "unresolved"],
     datasets: [
       {
-        data: [80, 20],
+        data: [resolvedPercent, unresolvedPercent ],
         backgroundColor: ["limegreen", "#eee"],
         borderWidth: 0,
       },
@@ -129,7 +131,7 @@ const ResolvedTickets = ({ total }) => {
       <div className="metric-detail">
         <div className="doughnut-container">
           <Doughnut data={data} options={options} className="doughnut-wrapper" />
-          <div className="doughnut-text">{total}%</div>
+          <div className="doughnut-text">{resolvedPercent}%</div>
         </div>
       </div>
     </div>

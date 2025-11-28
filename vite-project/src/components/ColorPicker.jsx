@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import styles from "../Styles/formGenerator.module.css";
+import "./css/formGenerator.css";
 
 const ColorPicker = ({ name, onChange, disabled, placeholder, defaultValue }) => {
   const [selectedColor, setSelectedColor] = useState(defaultValue);
-  const predefinedColors = ["#EB690F", "#FFFFFF", "#000000"];
+  const predefinedColors = ["#33475B", "#FFFFFF", "#000000"];
 
   useEffect(() => {
     if (defaultValue) setSelectedColor(defaultValue);
@@ -16,21 +16,21 @@ const ColorPicker = ({ name, onChange, disabled, placeholder, defaultValue }) =>
 
   return (
     <div>
-      <div className={styles["color-picker-wrapper"]}>
+      <div className="color-picker-wrapper">
         {predefinedColors.map((color) => (
           <div
             key={color}
             style={{ backgroundColor: color }}
-            className={`${styles["color-item"]} ${
-              selectedColor === color ? styles["active"] : ""
+            className={`${"color-item"} ${
+              selectedColor === color ? "active" : ""
             }`}
             onClick={() => handleColorChange(color)}
           />
         ))}
       </div>
 
-      <div className={styles["color-input-wrapper"]}>
-        <div className={styles["color-preview"]}>
+      <div className="color-input-wrapper">
+        <div className="color-preview">
           <input
             type="color"
             name={name}
@@ -38,15 +38,15 @@ const ColorPicker = ({ name, onChange, disabled, placeholder, defaultValue }) =>
             value={selectedColor}
             placeholder={placeholder}
             onChange={(e) => handleColorChange(e.target.value)}
-            className={styles["color-input"]}
+            className="color-input"
           />
           <div
-            className={styles["color-box"]}
+            className="color-box"
             style={{ backgroundColor: selectedColor }}
           />
         </div>
 
-        <span className={styles["color-input-text"]}>{selectedColor}</span>
+        <span className="color-input-text">{selectedColor}</span>
       </div>
     </div>
   );

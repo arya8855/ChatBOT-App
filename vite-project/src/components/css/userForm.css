@@ -1,14 +1,12 @@
-/* Outer container like the bubble card */
 .chatbot-form-container {
   background: #ffffff;
   padding: 1rem 1.2rem;
   border-radius: 12px;
-  width: 90%;
+  width: 70%;
   margin: 1rem auto;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Title "Introduce Yourself" */
 .chatbot-form-title {
   font-size: 0.9rem;
   font-weight: 600;
@@ -17,7 +15,6 @@
   display: block;
 }
 
-/* Label text */
 .chatbot-form-label {
   font-size: 0.8rem;
   color: #6a6b70;
@@ -26,7 +23,6 @@
   display: block;
 }
 
-/* Inputs look exactly like screenshot */
 .chatbot-form-input {
   width: 100%;
   padding: 6px 0;
@@ -40,17 +36,15 @@
   opacity: 0.6;
 }
 
-/* Form wrapper */
 .chatbot-form {
   display: flex;
   flex-direction: column;
 }
 
-/* Button matches screenshot */
 .chatbot-submit-btn {
   margin-top: 1rem;
   padding: 10px;
-  background-color: #184e7f; /* your primary dark blue */
+  background-color: #184e7f; 
   color: white;
   border: none;
   width: 100%;

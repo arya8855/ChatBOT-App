@@ -22,7 +22,7 @@ const statusMode = ["Resolved", "Unresolved"];
 const useChatDetail = ({ isDirect = false }) => {
   const { id } = useParams();
 
-  // ✅ FIX: Chat list comes from GET /chat/ticket (response: { totalLeads, leadsList })
+
   const { data, isLoading, refetch } = useGetChatListQuery(undefined, {
     refetchOnMountOrArgChange: true,
   });
@@ -123,8 +123,8 @@ const useChatDetail = ({ isDirect = false }) => {
       if (!selectedData || !activeChat) return;
 
       await updateStatus({
-        leadID: activeChat.leadID, // backend expects leadID
-        status: selectedData,
+        leadID: activeChat.leadID,     
+        status: selectedData.toLowerCase()
       }).unwrap();
 
       showToast("Status updated successfully", "success");
@@ -182,7 +182,7 @@ const useChatDetail = ({ isDirect = false }) => {
   };
 
   return {
-    data: chatList,          // FIXED: Always return correct chat list
+    data: chatList,          
     activeChat,
     toggleAssignee,
     toggleStatus,

@@ -4,7 +4,7 @@ import styles from "../Styles/linkBtn.module.css";
 
 const LinkButton = ({
   redirectTo = "../auth/sign-up",
-  text = "Sign up free",
+  text = "Sign up",
   color = "primary",
   className = "",
   isLight = false,

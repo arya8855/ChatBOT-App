@@ -3,6 +3,10 @@
   margin: 1rem 0;
 }
 
+.Header{
+  margin: 1rem 1rem;
+}
+
 .navigationWrapper {
   display: flex;
   flex-direction: column;
