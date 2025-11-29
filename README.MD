@@ -34,7 +34,7 @@ React
 
 Redux Toolkit (RTK Query)
 
-Vanilla CSS
+Vanilla CSS/ CSS Modules
 
 Backend
 
