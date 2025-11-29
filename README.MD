@@ -9,6 +9,8 @@ Hubly is a team-oriented communication platform that enables businesses to integ
 
  ✨Admin: Email- arya@test.com || Password- Arya@666
 
+ ✨Login Button in Dark Mode:- On some devices using system Dark Mode, the browser automatically adjusts colors, causing the Login button to appear very faint or invisible. This is due to dark-mode color inversion, not a functional error. The UI works correctly in Light Mode.
+
 ✨ Features
 
 💬 Chatbot (End-User Experience)
@@ -52,9 +54,6 @@ cd Hubly CRM-FE
 
 # Install dependencies
 npm install
-
-# Copy environment variables template and configure Cloudinary
-cp .env.example .env
 
 # Start the development server
 npm run dev
