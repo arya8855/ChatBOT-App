@@ -3,13 +3,12 @@ Hubly CRM - Chatbot & Admin Management Portal
 🚀 Overview
 Hubly is a team-oriented communication platform that enables businesses to integrate a chatbot interface for end-users and a powerful admin portal for internal management. End-users can chat through a widget embedded in a website, while admins can monitor conversations, manage chatbot settings, configure teams, and view chat-based analytics.
 
-🚀 Live Links Backend : https://hubly-crm-rgur.onrender.com
+🚀 Live Links Backend : https://hubly-chat-app.onrender.com
 
- Hubly-CRM(Frontend) : https://chat-bot-app-red.vercel.app
+ Hubly-CRM(Frontend) : https://chat-bot-app-fe-kappa.vercel.app
 
  ✨Admin: Email- arya@test.com || Password- Arya@666
 
- ✨Login Button in Dark Mode:- On some devices using system Dark Mode, the browser automatically adjusts colors, causing the Login button to appear very faint or invisible. This is due to dark-mode color inversion, not a functional error. The UI works correctly in Light Mode.
 
 ✨ Features
 
