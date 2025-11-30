@@ -60,7 +60,7 @@ const Chat = ({ isDirect = false }) => {
           <div className="page_title">Contact Details</div>
           <div className="chat-header">Chats</div>
 
-          <div className="chat_list hidden-scrollbar">
+          <div className="chat_list">
             {data?.map((item, idx) => (
               <div
                 key={item.leadID}
