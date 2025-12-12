@@ -10,6 +10,9 @@ Hubly is a team-oriented communication platform that enables businesses to integ
  ✨Admin: Email- arya@test.com || Password- Arya@666
 
 
+ ✨Important Note:- While first time opening the app it initially shows black screen but after few seconds the app and all the UIs loads slowly so just humble request to give it some         time and also in Dashboard inside All Tickets section it will show no tickets for few seconds but then all the tickets loads, This app is fully working.
+
+
 ✨ Features
 
 💬 Chatbot (End-User Experience)
